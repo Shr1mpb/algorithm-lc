@@ -33,7 +33,8 @@ public class ReceiveRain {
 
     // 按列搜索 两边同时向内 计算边
     // TODO
-    public int trap(int[] height) {
+    // leetcode 官解 屎
+    public int trap1(int[] height) {
         int ans = 0;
         int left = 0, right = height.length - 1;
         int leftMax = 0, rightMax = 0;
@@ -41,6 +42,26 @@ public class ReceiveRain {
             leftMax = Math.max(leftMax, height[left]);
             rightMax = Math.max(rightMax, height[right]);
             if (height[left] < height[right]) {
+                ans += leftMax - height[left];
+                ++left;
+            } else {
+                ans += rightMax - height[right];
+                --right;
+            }
+        }
+        return ans;
+    }
+
+    // 本质上 双指针是前缀最大值和后缀最大值方法 优化空间复杂度得来
+    // 左右维护最大值 如果左最大值比右小 则当前位置接水由左最大值确定
+    public int trap(int[] height) {
+        int ans = 0;
+        int left = 0, right = height.length - 1;
+        int leftMax = 0, rightMax = 0;
+        while (left <= right) {
+            leftMax = Math.max(leftMax, height[left]);
+            rightMax = Math.max(rightMax, height[right]);
+            if (leftMax < rightMax) {
                 ans += leftMax - height[left];
                 ++left;
             } else {
