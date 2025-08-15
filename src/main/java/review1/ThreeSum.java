@@ -6,7 +6,6 @@ import java.util.*;
  * 三数之和
  */
 public class ThreeSum {
-    // TODO
     // 排序+双指针
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
@@ -27,8 +26,12 @@ public class ThreeSum {
                     l++;
                     r--;
                     // 跳过重复元素 没必要计算
-                    while (l < r && nums[l] == nums[l - 1]) l++;
-                    while (l < r && nums[r] == nums[r + 1]) r--;
+                    while (l < r && nums[l] == nums[l - 1]) {
+                        l++;
+                    }
+                    while (l < r && nums[r] == nums[r + 1]) {
+                        r--;
+                    }
                 } else if (sum < target) {
                     l++;
                 } else {

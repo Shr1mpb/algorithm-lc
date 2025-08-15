@@ -6,7 +6,6 @@ import java.util.HashMap;
  * 和为 K 的子数组
  */
 public class SumK {
-    // TODO
     public int subarraySum(int[] nums, int k) {
         int count = 0, pre = 0;
         // 前缀和为x的有y个
