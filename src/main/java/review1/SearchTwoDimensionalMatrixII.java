@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 搜索二维矩阵 II
- * // TODO 二叉树
  */
 public class SearchTwoDimensionalMatrixII {
     public boolean searchMatrix(int[][] matrix, int target) {

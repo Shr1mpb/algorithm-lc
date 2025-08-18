@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 二叉树中的最大路径和
- * // TODO
  */
 public class MaximumPathSumInBinaryTree {
     private int max = Integer.MIN_VALUE;

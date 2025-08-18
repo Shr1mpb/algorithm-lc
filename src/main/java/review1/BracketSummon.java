@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * 括号生成
- * // TODO open、close
  */
 public class BracketSummon {
     // 括号生成  双回溯 决策顺序：算法总是先尝试添加左括号（如果允许），再尝试添加右括号（如果允许）。

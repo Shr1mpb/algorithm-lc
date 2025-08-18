@@ -4,8 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 最小覆盖字串
- * 数组存储频率 //TODO
+ * 最小覆盖子串
+ * 数组存储频率
  */
 public class MinimumCoveringSubstring {
     public String minWindow(String s, String t) {
@@ -27,6 +27,7 @@ public class MinimumCoveringSubstring {
         // 滑动窗口逻辑
         int[] ss = new int[128];
         int l = 0, r = l + t.length() - 1;
+        // 初始化第一个窗口left ~ （right -1）的字符
         for (int i = 0; i < r; i++) {
             ss[s.charAt(i)]++;
         }
