@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 回文链表
- *  // TODO
  */
 public class PalindromeLinkedList {
     // 得到中间 反转后方 开始遍历 比较

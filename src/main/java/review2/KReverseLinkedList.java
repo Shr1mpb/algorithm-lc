@@ -1,13 +1,16 @@
-package review1;
+package review2;
+
+import source.ListNode;
 
 /**
  * K 个一组翻转链表
+ * // TODO2 重温 wt
  */
 public class KReverseLinkedList {
     public static ListNode reverseKGroup(ListNode head, int k) {
         ListNode dummy = new ListNode(-1, head);
         ListNode pre = dummy;
-        // 开始循环
+        // 开始循环 每次迭代上次循环的末尾元素
         while (true){
             // 后面的节点不足k个 可以返回了
             ListNode last = pre;
@@ -28,19 +31,8 @@ public class KReverseLinkedList {
                 pre.next = next;
             }
             pre = cur;
+        }
+    }
 
-        }
-    }
-    private static class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-            next = null;
-        }
-        ListNode(int x,ListNode ne) {
-            val = x;
-            next = ne;
-        }
-    }
+
 }

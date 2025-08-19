@@ -5,7 +5,6 @@ import java.util.Map;
 
 /**
  * 从前序与中序遍历序列构造二叉树
- * // TODO
  */
 public class ConstructingBinaryTree {
     private Map<Integer, Integer> indexMap = new HashMap<>();

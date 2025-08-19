@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 验证二叉搜索树
- * // TODO
  */
 public class VerifyBinarySearchTree {
     public boolean isValidBST(TreeNode root) {
