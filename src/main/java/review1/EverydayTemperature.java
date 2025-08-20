@@ -5,7 +5,6 @@ import java.util.LinkedList;
 
 /**
  * 每日温度
- * // TODO 单调栈
  */
 public class EverydayTemperature {
     public int[] dailyTemperatures(int[] temperatures) {

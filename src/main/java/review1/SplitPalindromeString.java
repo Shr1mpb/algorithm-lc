@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * 分割回文串
- * // TODO 动态规划部分注意
  */
 public class SplitPalindromeString {
     boolean[][] f;

@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * 杨辉三角
- * // TODO
  */
 public class YangHuiTriangle {
     public List<List<Integer>> generate(int numRows) {
