@@ -4,7 +4,6 @@ import java.util.LinkedList;
 
 /**
  * 字符串解码
- * // TODO 2stack
  */
 public class StringDecoding {
     public String decodeString(String s) {

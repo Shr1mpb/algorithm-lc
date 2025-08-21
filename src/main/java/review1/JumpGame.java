@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 跳跃游戏
- * // TODO 最远超过 说明能跳得到
  */
 public class JumpGame {
     public boolean canJump(int[] nums) {
