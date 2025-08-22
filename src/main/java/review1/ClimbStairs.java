@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 爬楼梯
- * // TODO 很好理解，因为每次只能爬 1 级或 2 级，所以 f(x) 只能从 f(x−1) 和 f(x−2) 转移过来
  */
 public class ClimbStairs {
     public int climbStairs(int n) {
