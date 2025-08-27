@@ -1,9 +1,11 @@
-package review1;
+package review2;
 
 /**
  * 在排序数组中查找元素的第一个和最后一个位置
+ * // TODO2: 重温
  */
 public class FirstAndLastIndex {
+    // 二分查找后向左向右扩散
     public int[] searchRange(int[] nums, int target) {
         int l=search(nums,target);
         int r=search(nums,target+1);
@@ -12,17 +14,20 @@ public class FirstAndLastIndex {
         }
         return new int[]{l, r - 1};
     }
-    // 找 >=target 的第一个
+
+    /**
+     * 找 >=target 的第一个位置
+     */
     public int search(int[] nums,int target){
         int l = 0, r = nums.length;
-        while (l < r) {// r = mid、l = mid + 1 最后return l(还需要判断l是否越界)
-            int mid = l + ((r - l) >> 1);
-            if (nums[mid] >= target)
+        while (l < r) {
+            int mid = l + ((r - l) >> 2);
+            if (nums[mid] >= target) {
                 r = mid;
-            else
+            } else {
                 l = mid + 1;
+            }
         }
         return l;
     }
-
 }

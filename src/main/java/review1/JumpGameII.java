@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 跳跃游戏 II
- * // TODO 每次更新最远 到达跳跃边界更新跳跃次数 仍然是“可达”分析 不需要具体路线
  */
 public class JumpGameII {
     public int jump(int[] nums) {

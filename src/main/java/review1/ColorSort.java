@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 颜色分类
- * // TODO: 手写快排、插入排序
  */
 public class ColorSort {
     // 原地排序： 此处手写一个快排和插入排序
