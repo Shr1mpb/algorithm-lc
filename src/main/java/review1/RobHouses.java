@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 打家劫舍
- * // TODO
  */
 public class RobHouses {
     public int rob(int[] nums) {
