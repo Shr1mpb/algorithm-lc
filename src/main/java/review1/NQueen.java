@@ -6,7 +6,6 @@ import java.util.List;
 
 /**
  * N 皇后
- * // TODO 棋盘摆放时的方法和回溯方法
  */
 public class NQueen {
     public List<List<String>> solveNQueens(int n) {

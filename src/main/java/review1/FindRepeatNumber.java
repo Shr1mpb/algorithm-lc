@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 寻找重复数
- * // TODO: Floyd index为节点 value为指针 找环的入口
  */
 public class FindRepeatNumber {
     public int findDuplicate(int[] nums) {

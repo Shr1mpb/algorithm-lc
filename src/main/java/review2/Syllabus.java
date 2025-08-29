@@ -1,18 +1,16 @@
-package review1;
+package review2;
 
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * 课程表
+ * // TODO2: 重温 图论 邻接表(从前到后)+BFS
  */
 public class Syllabus {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         // degree数组记录每门课程的入度
         int[] degree = new int[numCourses];
-        // graph是邻接表表示课程之间的依赖关系
+        // graph是邻接表表示课程之间的依赖关系 从前向后
         List<List<Integer>> graph = new ArrayList<>();
         // 初始化邻接表，每门课程对应一个空的依赖列表
         for(int i = 0; i < numCourses; i++){
