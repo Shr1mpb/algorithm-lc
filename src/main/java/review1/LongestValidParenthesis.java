@@ -5,7 +5,6 @@ import java.util.LinkedList;
 
 /**
  * 最长有效括号
- * // TODO
  */
 public class LongestValidParenthesis {
     /*

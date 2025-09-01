@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * 划分字母区间
- * // TODO 记录最后出现的字母的下标 尽可能多的包含片段
  */
 public class DivideLetterIntervals {
     public List<Integer> partitionLabels(String s) {

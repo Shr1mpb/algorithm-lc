@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 单词搜索
- * // TODO
  */
 public class WordSearch {
     private static final int[][] DIRS = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};

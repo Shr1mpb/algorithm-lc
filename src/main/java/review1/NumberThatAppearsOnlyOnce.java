@@ -2,7 +2,6 @@ package review1;
 
 /**
  * 只出现一次的数字
- * // TODO: 技巧 ^
  */
 public class NumberThatAppearsOnlyOnce {
     public int singleNumber(int[] nums) {
